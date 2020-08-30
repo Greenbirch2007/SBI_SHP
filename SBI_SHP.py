@@ -129,7 +129,7 @@ if __name__=="__main__":
             # 都存到数据库算了，保存成txt文件有问题
             items = re.findall(patt, html)
             print(updateD, RT_confirmM, F_confirm, RT_URL, first_Content, first_STnum, first_Other)
-            lpath = os.getcwd()
+            lpath = "/root/SBI_SHP"
             f_intoDB = [num_coding]+[num_industry]+[num_title]+updateD+RT_confirmM+F_confirm+RT_URL+list_str(first_Content)+list_str(first_STnum)+list_str(first_Other)
             print(f_intoDB)
             if len(updateD+RT_confirmM)!=0:
@@ -172,5 +172,6 @@ if __name__=="__main__":
 # first_STnum  text,
 # first_Other  text
 # ) engine=InnoDB default charset=utf8;
+
 
 
