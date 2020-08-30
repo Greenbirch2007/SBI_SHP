@@ -1,0 +1,1 @@
+$ find  . -name *.PNG  | xargs cp -t d:\\Downloads\\fank
